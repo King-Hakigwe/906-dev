@@ -1,0 +1,117 @@
+@import 'variables';
+
+.nine__hero {
+    background: url('../Assets/home/hero-building.png') $blue center center/cover;
+    display: flex;
+    position: relative;
+    background-blend-mode: multiply;
+    min-height: 90vh;
+    &-container{
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+
+        &_content {
+            max-width: 55%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            
+            h1 {
+                font-size: $h1;
+                font-weight: bold;
+                color: $white;
+                margin-bottom: 1.5rem;
+                line-height: $line-height-h1;
+            }
+            p {
+                font-size: $regular-2;
+                margin-bottom: 3rem;
+                color: $white;
+                text-align: left;
+            }
+        }
+
+        &_target {
+            img {
+                max-width: 25rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:900px) {
+    .nine__hero {
+        height: 70vh;
+        &-container {
+            &_content {
+                h1{
+                    font-size: $h1-mobile;
+                    line-height: $line-height-h1-mobile;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 800px) {
+    .nine__hero {
+        display: block;
+        &-container {
+            min-height: 90vh;
+            position: relative;
+            display: flex;
+            
+           top: 0;
+            &_content{
+                max-width: 100%;
+                justify-content: center;
+                z-index: 2;
+
+
+                h1 {
+                    line-height: $line-height-h1-mobile;
+                    font-size: $h1-mobile;
+                }
+            }
+
+            &_target {
+               position: absolute;
+               display: flex;
+               justify-content: center;
+               
+                z-index: 1;
+               img{
+                   max-width: 100%;
+                   opacity: 30%;
+               }
+            }
+        }
+    }
+}
+
+@media screen and (max-height: 549px) {
+    .nine__hero-container_target {
+        display:none;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .nine__hero {
+        &-container {
+            &_content{
+                text-align: center;
+                align-items: center;
+
+                p {
+                    text-align: center;
+                }
+
+                .button {
+                    width: 15rem;
+                }
+            }
+        }
+    }
+}

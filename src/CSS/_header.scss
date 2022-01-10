@@ -1,0 +1,38 @@
+.nine__header {
+    background: $blue-75 center center/cover;
+    background-blend-mode: multiply;
+    max-height: 300vh;
+   &-content {
+       display: flex;
+       flex-direction: column;
+       padding: 3rem 0;
+       width: 50%;
+    h1{
+        font-size: $h1;
+        color: $white;
+    }
+
+    p {
+        color: $white;
+        font-size: $regular-2;
+    }
+   }
+}
+
+@media screen and (max-width: 800px) {
+    .nine__header {
+       
+        &-content {
+            width: 80%;
+            h1 {
+                font-size: $h1-mobile;
+            }
+
+            p {
+                color: $white;
+                font-size: $regular-2-mobile;
+            }
+        }
+       
+    }
+}

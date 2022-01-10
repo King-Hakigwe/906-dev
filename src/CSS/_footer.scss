@@ -1,0 +1,56 @@
+@import 'variables';
+
+.nine__footer {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+    max-height: 300vh;
+    background: $blue;
+    color: $lightblue;
+    p{
+        font-size: $regular;
+    }
+
+    &-container {
+    padding: 1rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        &_logo {
+            width: 10%;
+            img {
+                margin: 1rem 0;
+                max-width: 40%;
+            }
+        }
+    
+        &_links {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            a{
+                margin: 0 3rem;
+                color: $lightblue;
+                font-size: $regular;
+                font-family: 'Gothic A1', sans-serif;
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width: 800px) {
+    .nine__footer {
+        p {
+            padding-bottom: 1rem;
+        }
+        &-container {
+            &_links {
+               display: none;
+            }
+        }
+    }
+}

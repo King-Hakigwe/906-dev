@@ -1,0 +1,53 @@
+@import 'variables';
+
+
+.nine__client {
+    max-height: 300vh;
+    padding: 5rem 0;
+    margin-bottom: 2.5rem;
+  &-container {
+        overflow: hidden;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+
+       .header {
+           margin-bottom: 2rem;
+        h2 {
+            text-align: center;
+            font-size: $h2;
+            color: $blue;
+        }
+       }
+    &_client {
+        height: 5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+  }
+}
+
+@media screen and (max-width:800px) {
+    
+.nine__client {
+    padding: 2rem 0;
+    &-container {
+        .header {
+            h2 {
+                font-size: $h2-mobile;
+            }
+        }
+        &_client {
+            margin: auto;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            grid-template-columns: repeat(2,25%);
+        
+        }
+    }
+}
+
+}

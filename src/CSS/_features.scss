@@ -1,0 +1,26 @@
+@import 'variables';
+
+.nine__features {
+    background: $white;
+    position: relative;
+
+    .semicircle-1 {
+        position: absolute;
+        top: 5%;
+        right: 0;
+        max-width: 20%;
+    }
+    .semicircle-2 {
+        position:absolute;
+        top: 40%;
+        max-width: 20%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .semicircle-1,.semicircle-2 {
+        display: none;
+    }
+}
+
+

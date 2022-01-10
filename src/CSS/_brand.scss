@@ -1,0 +1,25 @@
+@import 'variables';
+    
+.nine__brand {
+    max-width: 15%;
+    
+
+    img {
+        width: 100%;
+        
+    }
+   
+}
+
+@media screen and (max-width: 800px) {
+    .nine__brand {
+        max-width: 100%;
+        
+    
+        img {
+            width: 100%;
+            
+        }
+       
+    }
+}
