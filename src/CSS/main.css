@@ -228,7 +228,7 @@
   z-index: 3;
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
-  max-height: 10vh;
+  max-height: 100vh;
 }
 
 .nine__navbar.scrolled {
