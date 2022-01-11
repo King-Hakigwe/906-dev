@@ -31,7 +31,7 @@ const Navbar = () => {
            <div className="container">
                 <div className="nine__navbar-links">
                 <div className="nine__navbar-links_logo">
-                    <a href="#home"><img src={logo} alt="logo"/></a>
+                    <NavLink to="/"><img src={logo} alt="logo"/></NavLink>
                 </div>
                 <div className="nine__navbar-links_container">
                     <Menu />

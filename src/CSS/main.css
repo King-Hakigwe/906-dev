@@ -1162,7 +1162,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: left;
 }
 
 .nine__feature-container_content h2, .nine__feature-container_content p {
@@ -1171,9 +1170,11 @@
 
 .nine__feature-container_content h2 {
   font-size: 35px;
+  text-align: center;
 }
 
 .nine__feature-container_content p {
+  text-align: left;
   font-size: 1.25rem;
 }
 
