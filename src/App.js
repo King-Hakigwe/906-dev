@@ -5,11 +5,12 @@ import About from './About'
 import Contact from './Contact';
 import Services from './Services';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { Navbar } from './Components';
-import { Scroll, Refresh } from './Utility';
+import {  } from './Components';
+import { Scroll } from './Utility';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import 'aos/dist/aos'
+
 
 
 const App = () => {
@@ -23,6 +24,8 @@ const App = () => {
         });
         
     }, []);
+
+    
 
    
     return (

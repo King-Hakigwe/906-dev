@@ -221,7 +221,29 @@
 }
 
 .nine__navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   background: #fff;
+  z-index: 2;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  max-height: 10vh;
+}
+
+.nine__navbar.scrolled {
+  background: #285C88 !important;
+  color: #fff !important;
+}
+
+.nine__navbar.scrolled a {
+  color: #fff !important;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.nine__navbar.scrolled a:hover {
+  border-bottom: 1px solid #fff;
 }
 
 .nine__navbar-links {
@@ -270,6 +292,7 @@
 .nine__navbar-menu {
   display: none;
   position: relative;
+  z-index: 3;
 }
 
 .nine__navbar-menu_container {
@@ -284,6 +307,7 @@
 }
 
 .nine__navbar-menu_container-links {
+  z-index: 3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -307,6 +331,17 @@
 }
 
 @media screen and (max-width: 800px) {
+  .nine__navbar.scrolled {
+    background: white !important;
+  }
+  .nine__navbar.scrolled a {
+    color: #707070 !important;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  .nine__navbar.scrolled a:hover {
+    border-bottom: 1px solid #285C88;
+  }
   .nine__navbar-links {
     padding: 0.75rem 0;
   }
@@ -314,6 +349,7 @@
     display: none;
   }
   .nine__navbar-menu {
+    z-index: 3;
     display: block;
   }
   .nine__navbar-menu_container {
@@ -754,7 +790,7 @@
   display: flex;
   position: relative;
   background-blend-mode: multiply;
-  min-height: 90vh;
+  min-height: 100vh;
 }
 
 .nine__hero-container {

@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import logo from '../../Assets/906-logo-2.png'
 import {RiCloseLine, RiMenu3Line} from 'react-icons/ri';
 import { NavLink } from 'react-router-dom';
+import $ from 'jquery';
 
 
 const Menu = () => {
@@ -15,6 +16,12 @@ const Menu = () => {
  )
 }
 
+$(function () {
+    $(document).scroll(function () {
+      var $nav = $(".nine__navbar");
+      $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+    });
+  });
 
 
 const Navbar = () => {
