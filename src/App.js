@@ -4,12 +4,14 @@ import Home from './Home';
 import About from './About'
 import Contact from './Contact';
 import Services from './Services';
+import Blog from './Blog';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import {  } from './Components';
 import { Scroll } from './Utility';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import 'aos/dist/aos'
+
 
 
 
@@ -36,7 +38,8 @@ const App = () => {
                         <Route path='/' element={<Home/>}></Route>
                         <Route path='/about' element={<About/>}></Route>
                         <Route path='/services' element={<Services/>}></Route>
-                        <Route path='/contact' element={<Contact/>}x></Route>
+                        <Route path='/contact' element={<Contact/>}></Route>
+                        <Route path='/services/service' element={<Blog/>}></Route>
                         <Route component={Error}/>
                     </Routes>              
             </div>

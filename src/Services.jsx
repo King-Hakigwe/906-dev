@@ -1,10 +1,12 @@
 import React, {useEffect} from 'react'
-import { Footer } from './Containers'
-import { CTA, Whitespace, Header, Navbar } from './Components'
+import { Footer, Service} from './Containers'
+import { CTA, Header, Navbar } from './Components'
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import 'aos/dist/aos';
 import header from '../src/Assets/Our Services/header.jpg'
+import { serviceContent } from './Containers';
+
 
 const Services = () => {
     useEffect(()=>{
@@ -23,12 +25,24 @@ const Services = () => {
         content: "906 offers many products and solutions that businesses  may need. These are split into three categories: cloud services, security and app development",
         backgroundImage: header
     }
+    let content = serviceContent
+
+    
 
     return (
+
+
+     
         <div>
             <Navbar></Navbar>
             <Header title={headercontent.title} content={headercontent.content} backgroundImage={headercontent.backgroundImage}></Header>
-           <Whitespace></Whitespace>
+            <div className="container">
+               <div className="content">
+                  {content.map((article)=> {
+                      return <Service key={article.index} header={article.header} content={article.Content} index={article.index} />
+                  })}
+               </div>
+            </div>
             <CTA></CTA>
             <Footer></Footer>
 

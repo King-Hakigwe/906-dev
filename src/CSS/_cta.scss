@@ -5,6 +5,7 @@
    margin-bottom: 5rem;
    background: url('../Assets/home/cta.jpg') $blue center center/cover;
    background-blend-mode: multiply;
+   overflow: hidden;
 
    &-content {
        display: flex;
