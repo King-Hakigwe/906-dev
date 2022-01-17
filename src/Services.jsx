@@ -25,7 +25,7 @@ const Services = () => {
         content: "906 offers many products and solutions that businesses  may need. These are split into three categories: cloud services, security and app development",
         backgroundImage: header
     }
-    let content = serviceContent
+   
 
     
 
