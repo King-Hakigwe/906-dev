@@ -38,7 +38,7 @@ const Services = () => {
             <Header title={headercontent.title} content={headercontent.content} backgroundImage={headercontent.backgroundImage}></Header>
             <div className="container">
                <div className="content">
-                  {content.map((article)=> {
+                  {serviceContent.map((article)=> {
                       return <Service key={article.index} header={article.header} content={article.Content} index={article.index} />
                   })}
                </div>

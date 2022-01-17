@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom'
 const Button = (props) => {
     return (
         <div>
-            <NavLink onClick={props.onclick} to='#' className={props.classes}>{props.suggest}</NavLink>
+            <NavLink onClick={props.onclick} to={props.link} className={props.classes}>{props.suggest}</NavLink>
         </div>
     )
 }

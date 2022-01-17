@@ -22,10 +22,10 @@ const Service = (props) => {
                  <h2>{props.header}</h2>
                  </div>
              <div className="nine__service-content_content">
-                 {/* <p>{props.content}</p> */}
-                 {count}
+                 <p>{props.content}</p>
+               
             </div>
-             <Button link= "/Services/service" onclick={checkClick} classes="button button-blue"suggest="Read more" onbutton={props.onclick}></Button>
+             <Button link={`/Services/${props.index}`} onclick={checkClick} classes="button button-blue"suggest="Read more" onbutton={props.onclick}></Button>
             </div>
             
         </div>
