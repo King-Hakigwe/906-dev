@@ -2967,6 +2967,25 @@
   visibility: visible;
 }
 
+@media screen and (max-width: 800px) {
+  .content {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .nine__service {
+    max-width: 90%;
+  }
+  .nine__service-content_header h2 {
+    font-size: 25px;
+  }
+  .nine__service-content_content {
+    margin: 2rem auto;
+  }
+  .nine__service-content_content p {
+    font-size: 18px;
+  }
+}
+
 .m1 {
   margin: 1rem;
 }
