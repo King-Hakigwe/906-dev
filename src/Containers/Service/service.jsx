@@ -1,18 +1,10 @@
 import React from 'react'
-import { useState } from 'react/cjs/react.development'
 
 import { Button } from '../../Components'
 
 
 
 const Service = (props) => {
-
-    const [count, setClicked] = useState(0);
-
-    function checkClick(){
-       setClicked(count + 1);
-       console.log(props.index)
-    }
     
 
     return (
@@ -25,7 +17,7 @@ const Service = (props) => {
                  <p>{props.content}</p>
                
             </div>
-             <Button link={`/Services/${props.index}`} onclick={checkClick} classes="button button-blue"suggest="Read more" onbutton={props.onclick}></Button>
+             <Button link={`/Services/${props.index}`} classes="button button-blue"suggest="Read more" ></Button>
             </div>
             
         </div>
