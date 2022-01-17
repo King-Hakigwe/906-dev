@@ -1199,6 +1199,7 @@
     font-size: 25px;
   }
   .nine__feature-container_content p {
+    text-align: justify;
     font-size: 18px;
   }
   .nine__feature-container_box {
