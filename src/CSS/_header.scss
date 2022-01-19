@@ -1,5 +1,6 @@
 .nine__header {
     background: $blue-75 center center/cover;
+    background-attachment: scroll;
     background-blend-mode: multiply;
     max-height: 300vh;
    &-content {

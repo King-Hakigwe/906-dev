@@ -10,7 +10,7 @@ const Feature = (props) => {
                     <div className={`nine__feature-container_content`}>
                         <h2>{props.header}</h2>
                         <p> {props.content}</p>
-                        <Button link='/About' classes={`button button-blue ${props.buttonTheme}`} suggest="Learn More"></Button>
+                        <Button link={props.link} classes={`button button-blue ${props.buttonTheme}`} suggest="Learn More"></Button>
                     </div>
                     <div className="nine__feature-container_box" style={{ backgroundImage: `url(${props.url})`}}>
                         

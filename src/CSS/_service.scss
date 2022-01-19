@@ -21,9 +21,10 @@
             }
         }
         &_content {
-            max-height: 10rem;
+            max-height: 5rem;
             overflow: hidden;
             margin: 2rem 0;
+            margin-bottom: 3rem;
             p {
                 text-align: justify;
                 font-size: $regular-2;

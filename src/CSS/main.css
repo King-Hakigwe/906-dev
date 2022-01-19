@@ -2549,6 +2549,7 @@
 
 .nine__header {
   background: rgba(40, 92, 136, 0.5) center center/cover;
+  background-attachment: scroll;
   background-blend-mode: multiply;
   max-height: 300vh;
 }
@@ -2962,9 +2963,10 @@
 }
 
 .nine__service-content_content {
-  max-height: 10rem;
+  max-height: 5rem;
   overflow: hidden;
   margin: 2rem 0;
+  margin-bottom: 3rem;
 }
 
 .nine__service-content_content p {
