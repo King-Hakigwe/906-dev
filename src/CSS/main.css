@@ -2601,6 +2601,7 @@
   padding: 1rem 0;
   font-size: 20px;
   line-height: 2;
+  text-align: justify;
 }
 
 @media screen and (max-width: 800px) {
@@ -2941,22 +2942,29 @@
 }
 
 .nine__service {
-  max-width: 80%;
+  max-width: 90%;
   margin-bottom: 5rem;
 }
 
 .nine__service-content {
   color: #285C88;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .nine__service-content_header h2 {
-  font-size: 35px;
+  font-size: 30px;
 }
 
 .nine__service-content_content {
   max-height: 10rem;
   overflow: hidden;
-  margin: 3rem 0;
+  margin: 2rem 0;
 }
 
 .nine__service-content_content p {

@@ -8,8 +8,10 @@ const CloudServices = () => {
         <div>
            <Navbar></Navbar>
             <Header title='Cloud Services' backgroundImage={header}></Header>
-            <Content paragraph={`Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus non voluptates alias dignissimos atque libero! Magnam aliquam repellendus cupiditate! Officia praesentium enim in doloremque fugit? Quidem quos dolore delectus in id cum consectetur eveniet cupiditate rem ea labore iure soluta, eaque fuga quam, nemo sapiente eius cumque! Ratione doloremque placeat vitae odio labore quasi, at in, quam adipisci qui rem itaque, ut beatae nobis cumque ipsum inventore eum doloribus commodi harum asperiores magni nesciunt ex optio! Animi, tempore praesentium. Ipsam nemo qui aliquid dignissimos voluptatem, veniam delectus molestiae accusamus perferendis facilis non dolorem officia fugit porro suscipit cum natus facere?`}></Content>
-            <Content paragraph={`Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus non voluptates alias dignissimos atque libero! Magnam aliquam repellendus cupiditate! Officia praesentium enim in doloremque fugit? Quidem quos dolore delectus in id cum consectetur eveniet cupiditate rem ea labore iure soluta, eaque fuga quam, nemo sapiente eius cumque! Ratione doloremque placeat vitae odio labore quasi, at in, quam adipisci qui rem itaque, ut beatae nobis cumque ipsum inventore eum doloribus commodi harum asperiores magni nesciunt ex optio! Animi, tempore praesentium. Ipsam nemo qui aliquid dignissimos voluptatem, veniam delectus molestiae accusamus perferendis facilis non dolorem officia fugit porro suscipit cum natus facere?`}></Content>
+            <Content paragraph={`Cloud services and business mobility are paramount in today’s business landscape and that is why we maintain your services on a private network and the hardware and software dedicated solely to your organization making it easier for your organization to tailor resources to your specific requirements, which would provide you with flexibility, control and stability.
+Deploying our azure cloud service to your organization helps you innovate and evolve with purpose towards growth, realizing cost saving, efficient and flexible cloud computing processes.
+`}></Content>
+          
             <CTA></CTA>
             <Footer></Footer> 
         </div>

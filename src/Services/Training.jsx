@@ -8,8 +8,9 @@ const Training = () => {
         <div>
             <Navbar></Navbar>
             <Header title='Training' backgroundImage={header}></Header>
-            <Content paragraph={`Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus non voluptates alias dignissimos atque libero! Magnam aliquam repellendus cupiditate! Officia praesentium enim in doloremque fugit? Quidem quos dolore delectus in id cum consectetur eveniet cupiditate rem ea labore iure soluta, eaque fuga quam, nemo sapiente eius cumque! Ratione doloremque placeat vitae odio labore quasi, at in, quam adipisci qui rem itaque, ut beatae nobis cumque ipsum inventore eum doloribus commodi harum asperiores magni nesciunt ex optio! Animi, tempore praesentium. Ipsam nemo qui aliquid dignissimos voluptatem, veniam delectus molestiae accusamus perferendis facilis non dolorem officia fugit porro suscipit cum natus facere?`}></Content>
-            <Content paragraph={`Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus non voluptates alias dignissimos atque libero! Magnam aliquam repellendus cupiditate! Officia praesentium enim in doloremque fugit? Quidem quos dolore delectus in id cum consectetur eveniet cupiditate rem ea labore iure soluta, eaque fuga quam, nemo sapiente eius cumque! Ratione doloremque placeat vitae odio labore quasi, at in, quam adipisci qui rem itaque, ut beatae nobis cumque ipsum inventore eum doloribus commodi harum asperiores magni nesciunt ex optio! Animi, tempore praesentium. Ipsam nemo qui aliquid dignissimos voluptatem, veniam delectus molestiae accusamus perferendis facilis non dolorem officia fugit porro suscipit cum natus facere?`}></Content>
+            <Content paragraph={`Change is the only constant, at 906 we believe your team should continuously evolve, adapt and conquer, to do that your team needs to be at the top level.
+     With our training and support services you can be rest assured that employee competency and skill sets would be maintained at the highest levels with quality IT training and expert consultation services to keep your team and workforce at their sharpest of wits, enabling you pursue job enhancements, promotion, increased motivation and job satisfaction.`}></Content>
+           
             <CTA></CTA>
             <Footer></Footer>
         </div>

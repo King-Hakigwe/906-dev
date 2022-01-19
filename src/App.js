@@ -14,7 +14,8 @@ import CloudServices from './Services/CloudServices';
 import AppServices from './Services/AppServices';
 import Collaboration from './Services/Collaboration';
 import Security from './Services/Security';
-import Training from './Services/Training'
+import Training from './Services/Training';
+import CRM from './Services/CRM';
 
 
 
@@ -48,6 +49,7 @@ const App = () => {
                         <Route path='/services/3' element={<AppServices/>}></Route>
                         <Route path='/services/4' element={<Collaboration/>}></Route>
                         <Route path='/services/5' element={<Training/>}></Route>
+                        <Route path='/services/6' element={<CRM/>}></Route>
                         <Route component={Error}/>
                     </Routes>              
             </div>
