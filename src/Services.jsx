@@ -8,10 +8,11 @@ import header from '../src/Assets/Our Services/header.jpg'
 import { serviceContent } from './Containers';
 
 
+
 const Services = () => {
     useEffect(()=>{
         Aos.init({ 
-            duration: 1000,
+            duration: 500,
             // disable: () => {
             //     var maxWidth = 800;
             //     return window.innerWidth < maxWidth;
@@ -26,8 +27,7 @@ const Services = () => {
         backgroundImage: header
     }
    
-
-    
+   
 
     return (
 
@@ -38,11 +38,14 @@ const Services = () => {
             <Header title={headercontent.title} content={headercontent.content} backgroundImage={headercontent.backgroundImage}></Header>
             <div className="container">
                <div className="content">
-                  {serviceContent.map((article)=> {
-                      return <Service key={article.index} header={article.header} content={article.Content} index={article.index} />
+                  {serviceContent.map ((article)=> {
+                      return <Service key={article.index} header={article.header} content={article.Content} index={article.index} background= {article.image}/>
                   })}
                </div>
             </div>
+            {/* <div>{serviceContent.map((images)=> {return (
+                <img src={images.image} alt="" srcset="" style={{maxWidth: '50%'}}/>
+            )})}</div> */}
             <CTA></CTA>
             <Footer></Footer>
 
