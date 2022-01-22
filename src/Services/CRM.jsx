@@ -1,5 +1,5 @@
 import React from 'react'
-import header from '../Assets/Services/Collaboration/header.jpg';
+import header from '../Assets/Services/Collaboration/header.webp';
 import { Navbar, Header, CTA} from '../Components'
 import { Content, Footer } from '../Containers'
 

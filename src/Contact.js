@@ -4,7 +4,7 @@ import {  Header, Navbar } from './Components'
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import 'aos/dist/aos';
-import header from './Assets/Contact/header.jpg'
+import header from './Assets/Contact/header.webp'
 
 
 

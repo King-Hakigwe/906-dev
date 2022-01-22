@@ -1,9 +1,9 @@
 import React from 'react'
 import { Brand } from '../../Components'
-import prime from '../../Assets/brands/prime.png'
-import precise from '../../Assets/brands/precisehire.png'
-import africare from '../../Assets/brands/AfricaRe.png'
-import wemabod from '../../Assets/brands/wemabod.jpeg'
+import prime from '../../Assets/brands/prime.webp'
+import precise from '../../Assets/brands/precisehire.webp'
+import africare from '../../Assets/brands/AfricaRe.webp'
+import wemabod from '../../Assets/brands/wemabod.webp'
 
 
 const clients = () => {

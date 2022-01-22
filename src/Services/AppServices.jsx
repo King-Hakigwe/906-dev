@@ -1,7 +1,7 @@
 import React from 'react'
 import { Navbar, CTA, Header } from '../Components'
 import { Footer } from '../Containers'
-import  header  from '../Assets/Services/AppServices/header.jpg'
+import  header  from '../Assets/Services/AppServices/header.webp'
 import { Content } from '../Containers'
 const AppServices = () => {
     return (

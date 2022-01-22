@@ -1,5 +1,5 @@
 import React from 'react'
-import target from '../../Assets/home/hero-target.png'
+import target from '../../Assets/home/hero-target_result.webp'
 import { Button } from '../../Components'
 
 const hero = () => {

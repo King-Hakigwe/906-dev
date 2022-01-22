@@ -1,10 +1,10 @@
 import React from 'react'
 import { Feature } from '../../Components'
-import BackgroundOne from '../../Assets/home/feature-1.jpg';
-import BackgroundTwo from '../../Assets/home/feature-2.jpg';
-import BackgroundThree from '../../Assets/home/feature-3.jpg';
-import darkCircle from '../../Assets/home/target-half.png'
-import lightCircle from '../../Assets/home/target-half-2.png'
+import BackgroundOne from '../../Assets/home/feature-1_result.webp';
+import BackgroundTwo from '../../Assets/home/feature-2_result.webp';
+import BackgroundThree from '../../Assets/home/feature-3_result.webp';
+import darkCircle from '../../Assets/home/target-half_result.webp'
+import lightCircle from '../../Assets/home/target-half-2_result.webp'
 
 
 

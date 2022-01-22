@@ -1,10 +1,10 @@
 
 // import { AppService, CloudService, Collaboration, Security, Training } from '../../Assets/Services';
-import {default as AppService} from '../../Assets/Services/AppServices/header.jpg'
-import {default as CloudService} from '../../Assets/Services/CloudServices/header.jpg'
-import {default as Collaboration} from '../../Assets/Services/Collaboration/header.jpg'
-import {default as Training} from '../../Assets/Services/Training/header.jpg'
-import {default as Security} from '../../Assets/Services/Security/header.jpg'
+import {default as AppService} from '../../Assets/Services/AppServices/header.webp'
+import {default as CloudService} from '../../Assets/Services/CloudServices/header.webp'
+import {default as Collaboration} from '../../Assets/Services/Collaboration/header.webp'
+import {default as Training} from '../../Assets/Services/Training/header.webp'
+import {default as Security} from '../../Assets/Services/Security/header.webp'
 
 let serviceContent = [
     {
