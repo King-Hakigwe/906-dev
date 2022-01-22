@@ -3140,16 +3140,28 @@
   visibility: visible;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1100px) {
   .content {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 1fr;
   }
   .nine__service {
     max-width: 100%;
     max-height: 100%;
     height: initial;
-    width: initial;
+    width: 100%;
     border-radius: 0%;
   }
   .nine__service-content {
