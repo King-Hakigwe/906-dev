@@ -1,7 +1,7 @@
 import React from 'react'
 import { Navbar, CTA, Header } from '../Components'
 import { Footer } from '../Containers'
-import  header  from '../Assets/Services/Collaboration/header.webp'
+import  header  from '../Assets/Services/Collaboration/header.jpg'
 import { Content } from '../Containers'
 const Collaboration = () => {
     return (

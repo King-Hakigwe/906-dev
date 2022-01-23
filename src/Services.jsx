@@ -1,6 +1,6 @@
-import React, {useEffect, useState} from 'react'
+import React, {useEffect, useState, Suspense, lazy} from 'react'
 import ReactLoading from 'react-loading'
-import { Footer, Service} from './Containers'
+import { Footer} from './Containers'
 import { CTA, Header, Navbar } from './Components'
 import Aos from 'aos';
 import 'aos/dist/aos.css';
@@ -9,7 +9,7 @@ import header from '../src/Assets/Our Services/header.webp'
 import { serviceContent } from './Containers';
 import { BounceLoader } from 'react-spinners';
 
-// const Service = React.lazy(()=> import('./Containers/Service/service'))
+const Service = React.lazy(()=> import('./Containers/Service/service'))
 
 const Services = () => {
 
@@ -46,6 +46,7 @@ const Services = () => {
         <div>
             <Navbar></Navbar>
             <Header title={headercontent.title} content={headercontent.content} backgroundImage={headercontent.backgroundImage}></Header>
+            <Suspense fallback={<div/>}>
             <div className="container">
             { loading ?   <div className='loader'><BounceLoader style={{margin: ' 7rem auto'}} color={'#285C88'} loading={loading} css={''} size={150} /></div> : <div className="content">
                     {serviceContent.map ((article)=> {
@@ -55,6 +56,7 @@ const Services = () => {
                </div>}
                
             </div>
+            </Suspense>
             {/* <div>{serviceContent.map((images)=> {return (
                 <img src={images.image} alt="" srcset="" style={{maxWidth: '50%'}}/>
             )})}</div> */}
