@@ -1,7 +1,7 @@
 import React from 'react'
 import { Feature } from '../../Components'
 import BackgroundOne from '../../Assets/home/feature-1_result.webp';
-import BackgroundTwo from '../../Assets/home/feature-2_result.webp';
+import BackgroundTwo from '../../Assets/home/feature-2_result.jpg';
 import BackgroundThree from '../../Assets/home/feature-3_result.webp';
 import darkCircle from '../../Assets/home/target-half_result.webp'
 import lightCircle from '../../Assets/home/target-half-2_result.webp'

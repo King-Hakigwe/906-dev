@@ -5,7 +5,7 @@ import { CTA, Header, Navbar } from './Components'
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import 'aos/dist/aos';
-import header from '../src/Assets/Our Services/header.webp'
+import header from '../src/Assets/Our Services/header.jpg'
 import { serviceContent } from './Containers';
 import { BounceLoader } from 'react-spinners';
 
