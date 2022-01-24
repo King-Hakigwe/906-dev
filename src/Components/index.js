@@ -7,3 +7,5 @@ export {default as Carousel} from './Carousel/Carousel';
 export {default as CarouselItem} from './Carousel/CarouselItem';
 export {default as Whitespace} from './whitespace/whitespace';
 export {default as Header} from './Header/Header';
+export {default as Testimonial} from './Testimonial/Testimonial';
+

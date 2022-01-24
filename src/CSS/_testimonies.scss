@@ -1,0 +1,82 @@
+@import 'variables';
+
+
+.nine__testimonials {
+    background: $lightblue-gradient;
+    margin: 2rem 0;
+    margin-bottom: 0;
+    &-header {
+        h1 {
+            color: $blue;
+            font-size: $h1;
+            text-align: center;
+        }
+    }
+    &-content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: flex-start;
+        justify-content: center;
+    }
+}
+
+.nine__testimonial {
+    margin-bottom: 1rem ;
+   
+    &-content {
+        padding: 2rem;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: flex-end;
+        color: $blue;
+        &_quote {
+            font-size: $regular-2;
+            text-align: right;
+        }
+        &_testimony {
+            font-size: $regular-2;
+            text-align: justify;
+            line-height: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+}
+}
+
+@media screen and (max-width: 1200px) {
+    .nine__testimonials {
+        
+        &-header {
+            h1 {
+                font-size: $h1-mobile;
+                
+            }
+        }
+        &-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+    }
+
+    .nine__testimonial {
+       
+       
+        &-content {
+           
+            &_quote {
+                font-size: $regular-2-mobile;
+               
+            }
+            &_testimony {
+                font-size: $regular-2-mobile;
+               
+            }
+            
+    }
+    }
+    
+}

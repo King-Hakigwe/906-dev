@@ -1,5 +1,5 @@
-import React, {useEffect, useState, Suspense, lazy} from 'react'
-import ReactLoading from 'react-loading'
+import React, {useEffect, useState, Suspense} from 'react'
+
 import { Footer} from './Containers'
 import { CTA, Header, Navbar } from './Components'
 import Aos from 'aos';
@@ -50,7 +50,7 @@ const Services = () => {
             <div className="container">
             { loading ?   <div className='loader'><BounceLoader style={{margin: ' 7rem auto'}} color={'#285C88'} loading={loading} css={''} size={150} /></div> : <div className="content">
                     {serviceContent.map ((article)=> {
-                      return <Service key={article.index} header={article.header} content={article.Content} index={article.index} background= {article.image}/>
+                      return <Service data-aos='fade-in' key={article.index} header={article.header} content={article.Content} index={article.index} background= {article.image}/>
 
                   })}
                </div>}

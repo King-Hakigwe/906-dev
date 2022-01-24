@@ -5,6 +5,7 @@ import {default as CloudService} from '../../Assets/Services/CloudServices/heade
 import {default as Collaboration} from '../../Assets/Services/Collaboration/header.jpg'
 import {default as Training} from '../../Assets/Services/Training/header.jpg'
 import {default as Security} from '../../Assets/Services/Security/header.jpg'
+import {default as CRM} from '../../Assets/Services/CRM/header.jpg'
 
 let serviceContent = [
     {
@@ -42,7 +43,7 @@ let serviceContent = [
     {
      index: 6,
      header: "CRM",
-     image: CloudService,
+     image: CRM,
      Content: `Increasing your profitability and bottom line by streamlining processes that clog the wheel of effective sales, marketing and customer service, while allowing you focus on creating and maintain the best relationship between you and your customers. Our aim is to improve your interaction and business process with your customer thereby improving business growth and productivity.
      `}
 ]
