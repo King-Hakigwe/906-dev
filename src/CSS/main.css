@@ -3089,8 +3089,8 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: url("../Assets/Services/AppServices/header.webp") rgba(40, 92, 136, 0.5) center center/cover;
-  background-blend-mode: multiply;
+  background: rgba(40, 92, 136, 0.5) center center/cover;
+  background-blend-mode: darken;
   border: 15px solid #285C88;
   border-radius: 50%;
 }
@@ -3114,6 +3114,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background: rgba(40, 92, 136, 0.5) center center/cover;
+  background-blend-mode: multiply;
 }
 
 .nine__service-content_header {
@@ -3166,10 +3168,43 @@
     width: 100%;
     border-radius: 0%;
   }
-  .nine__service-content {
+  bac
+.nine__service-content {
     margin: 5rem 0;
     border-radius: 0%;
     border: none;
+  }
+  bac
+.nine__service-content_header h2 {
+    font-size: 25px;
+  }
+  bac
+.nine__service-content_content {
+    margin: 2rem auto;
+  }
+  bac
+.nine__service-content_content p {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-device-width: 800px) and (-webkit-min-device-pixel-ratio: 2) {
+  .nine__service {
+    max-width: 100%;
+    max-height: 100%;
+    height: initial;
+    width: 100%;
+    border-radius: 0%;
+    background-blend-mode: multiply;
+  }
+  .nine__service-content {
+    height: 10rem;
+    margin: 5rem 0;
+    border-radius: 0%;
+    border: none;
+    padding: 5rem 0;
+    background: rgba(40, 92, 136, 0.5) center center/cover;
+    background-blend-mode: multiply;
   }
   .nine__service-content_header h2 {
     font-size: 25px;
