@@ -27,8 +27,9 @@
     <title>906 Global</title>
   </head>
   <body>
-    <form name='contact' method='POST' netlify netlify-honeypot="bot-field" hidden>
-      <input type="hidden" name='form-name' value='contact'/>
+    <form name='contact' action="/cgi-sys/formmail.pl" method="post" hidden>
+      <input type="hidden" name="recipient" value="davidigwe31@gmail.com">
+<input type="hidden" name="subject" value="Form Submission">
       <input type="text" placeholder='
       Name' name='name'/>
       <input type="text" placeholder='

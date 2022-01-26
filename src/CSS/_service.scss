@@ -17,6 +17,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background: rgba(40, 92, 136, 0.50) center center/cover;
+    background-blend-mode: multiply;
     
     border: 15px solid $blue;
     border-radius: 50%;

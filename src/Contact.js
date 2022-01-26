@@ -51,8 +51,9 @@ const Contact = () => {
                             </div>
                         </div>
                         <div className="nine__contact-content_form">
-                            <form name='contact' method='POST' data-netlify='true' hidden>
-                                <input type="hidden" name='form-name' value='contact'/>
+                            <form name='contact' action="/cgi-sys/formmail.pl" method="post" hidden>
+                            <input type="hidden" name="recipient" value="davidigwe31@gmail.com"/>
+                            <input type="hidden" name="subject" value="Form Submission"></input>
                                 <input type="text" placeholder='
                                 Name' name='name'/>
                                 <input type="text" placeholder='
