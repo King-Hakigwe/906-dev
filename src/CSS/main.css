@@ -3089,6 +3089,8 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background: url("../Assets/Services/AppServices/header.webp") rgba(40, 92, 136, 0.5) center center/cover;
+  background-blend-mode: multiply;
   border: 15px solid #285C88;
   border-radius: 50%;
 }
