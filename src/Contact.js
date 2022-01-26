@@ -1,10 +1,12 @@
-import React, {useEffect} from 'react'
+import React, {useEffect, useRef} from 'react'
 import { Footer } from './Containers'
 import {  Header, Navbar } from './Components'
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import 'aos/dist/aos';
 import header from './Assets/Contact/header.webp'
+import emailjs from '@emailjs/browser';
+
 
 
 
@@ -27,7 +29,20 @@ const Contact = () => {
         backgroundImage: header
     }
 
+    const form = useRef();
+
+    const sendEmail = (e) => {
+      e.preventDefault();
   
+      emailjs.sendForm('service_lxp359e', 'template_ubcad6v', form.current, 'user_yN6A2kjTsJJghB5aL5NWi')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+        e.target.reset();
+    };
+    
     return (
         
         <div>
@@ -51,15 +66,13 @@ const Contact = () => {
                             </div>
                         </div>
                         <div className="nine__contact-content_form">
-                            <form name='contact' action="/cgi-sys/formmail.pl" method="post" hidden>
-                            <input type="hidden" name="recipient" value="davidigwe31@gmail.com"/>
-                            <input type="hidden" name="subject" value="Form Submission"></input>
+                        <form ref={form} name='contact' action="/cgi-sys/formmail.pl" method="post" onSubmit={sendEmail}>
                                 <input type="text" placeholder='
-                                Name' name='name'/>
+                                Name' name='from_name'/>
                                 <input type="text" placeholder='
                                 email' name='email'/>
                                 <textarea name="message" id="" cols="30" rows="10" placeholder='Message'></textarea>
-                                <button className='button button-blue' type='submit'>Send Email</button>
+                                <input className='button button-blue' type='submit' value='Send Message'></input>
                             </form>
                         </div>
                     </div>
